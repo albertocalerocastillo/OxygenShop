@@ -1,0 +1,450 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+}
+
+.header {
+  position: relative;
+  padding: 1.1rem;
+  border-bottom: 1px solid #FFFFFF;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2901960784);
+  width: 100%;
+}
+.header__logo {
+  color: #08A6E4;
+  font-family: Raleway;
+  font-size: 2rem;
+  display: inline-block;
+  font-weight: 400;
+}
+.header__menu-button {
+  position: absolute;
+  background: none;
+  top: 50%;
+  right: 25px;
+  border: none;
+  color: #07ACE6;
+  cursor: pointer;
+}
+
+.main-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 1000px) {
+  .main-content {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .estadisticas {
+    display: flex;
+    justify-content: space-around;
+  }
+  .estadisticas__item {
+    width: 30%;
+    margin-bottom: 0;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.sell-more {
+  text-align: center;
+  padding: 5.7rem 3rem;
+}
+.sell-more__title {
+  font-family: Raleway;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+.sell-more__description {
+  font-family: Open Sans;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+.sell-more__button {
+  background-color: #08A6E4;
+  color: #FFFFFF;
+  font-family: Open Sans;
+  font-weight: bold;
+  border: none;
+  border-radius: 200px;
+  padding: 1.3rem 4.3rem;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 8px 8px rgba(7, 172, 230, 0.2901960784);
+}
+
+.image-section {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.image-section__image {
+  width: 100%;
+  display: inline-block;
+}
+
+.estadisticas {
+  text-align: center;
+  padding: 0.5rem 1rem;
+}
+.estadisticas__title {
+  font-family: Raleway;
+  font-size: 1.9rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.estadisticas__iconos {
+  max-width: 258px;
+  min-width: 258px;
+  margin: 0 auto;
+}
+.estadisticas__item {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 2rem;
+  text-align: center;
+  position: relative;
+}
+.estadisticas__circulo {
+  margin: 0 auto 1rem;
+  z-index: 0;
+  position: relative;
+  display: block;
+}
+.estadisticas__persona {
+  margin: 0 auto 1rem;
+  z-index: 1;
+  margin-top: -77px;
+  margin-bottom: 25px;
+  margin-right: 86px;
+  position: relative;
+  display: block;
+}
+.estadisticas__ojo {
+  margin-top: -68px;
+  margin-bottom: 1.8rem;
+  margin-left: 117px;
+  position: relative;
+  display: block;
+}
+.estadisticas__post {
+  margin-top: -72px;
+  margin-bottom: 1.8rem;
+  margin-left: 130px;
+  position: relative;
+  display: block;
+}
+.estadisticas__number {
+  font-size: 1.3rem;
+  font-family: Raleway;
+  font-weight: bold;
+  display: block;
+  letter-spacing: 0.25em;
+  margin-top: 10px;
+}
+.estadisticas__label {
+  color: #A5A5A5;
+  font-family: Raleway;
+  font-size: 1rem;
+  margin-top: 15px;
+}
+
+.caracteristicas {
+  background-color: #F7F7F7;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+.caracteristicas__card {
+  background-color: #FFFFFF;
+  border-radius: 6px;
+  border: 1px solid #E8E9ED;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  width: 95%;
+  max-width: 400px;
+  display: inline-block;
+  text-align: left;
+}
+.caracteristicas__iconos {
+  max-width: 258px;
+  min-width: 258px;
+  margin: 0 auto;
+}
+.caracteristicas__iconosfull {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+.caracteristicas__dispositivolap {
+  margin: 0 auto 1rem;
+  z-index: 1;
+  margin-top: 10px;
+  position: relative;
+  display: block;
+}
+.caracteristicas__bolaroja {
+  margin: 0 auto 1rem;
+  z-index: 0;
+  margin-top: -150px;
+  margin-bottom: 60px;
+  margin-right: 26px;
+  display: block;
+}
+.caracteristicas__dispositivomov {
+  margin: 0 auto 1rem;
+  z-index: 1;
+  margin-left: 65px;
+  position: relative;
+  display: block;
+}
+.caracteristicas__bolaazul {
+  margin: 0 auto 1rem;
+  z-index: 0;
+  margin-top: -160px;
+  margin-bottom: 40px;
+  display: block;
+}
+.caracteristicas__trompeta {
+  margin: 0 auto 1rem;
+  z-index: 1;
+  position: relative;
+  display: block;
+}
+.caracteristicas__fondoverde {
+  width: 100%;
+  margin: 0 auto 1rem;
+  z-index: 0;
+  margin-top: -210px;
+  display: block;
+}
+.caracteristicas__title {
+  font-family: Raleway;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+  color: #000000;
+}
+.caracteristicas__description {
+  font-family: Open Sans;
+  font-size: 0.9rem;
+  color: #000000;
+  line-height: 1.6;
+}
+
+.precios {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.precios__title {
+  font-family: Raleway, sans-serif;
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-top: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.precio-cards {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.precio-card {
+  position: relative;
+  padding: 2rem;
+  border: 2px solid #ccc;
+  border-radius: 17px;
+  background-color: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin-bottom: 60px;
+}
+
+.precio-card.basic:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 20px #FB3B64;
+}
+.precio-card.basic:hover .precio-card__button {
+  box-shadow: 0 4px 20px #FB3B64;
+}
+
+.precio-card.professional:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(7, 172, 230, 0.2901960784);
+}
+.precio-card.professional:hover .precio-card__button {
+  box-shadow: 0 10px 20px rgba(7, 172, 230, 0.2901960784);
+}
+
+.precio-card.premium:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 20px #55DFB4;
+}
+.precio-card.premium:hover .precio-card__button {
+  box-shadow: 0 4px 20px #55DFB4;
+}
+
+.precio-card__paquete {
+  position: absolute;
+  top: 6rem;
+  left: 2.8rem;
+  text-align: left;
+}
+
+.precio-card__planBasic {
+  font-family: Raleway;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #13253B;
+  font-weight: bold;
+  margin-top: -30px;
+}
+
+.precio-card__planProfessional {
+  font-family: Raleway;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #13253B;
+  font-weight: bold;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.precio-card__planPremium {
+  font-family: Raleway;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #13253B;
+  font-weight: bold;
+  margin-top: -30px;
+  margin-left: -10px;
+}
+
+.precio-card__price {
+  font-family: Open Sans;
+  font-size: 3rem;
+  font-weight: 100;
+  display: block;
+}
+
+.precio-card__price span {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #13253B;
+  display: block;
+  margin-top: -5px;
+}
+
+.precio-card__features {
+  list-style-type: none;
+  padding: 0;
+  margin-top: -30px;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  position: relative;
+  left: 4.5rem;
+  display: inline-block;
+}
+
+.precio-card__features li {
+  font-family: Open Sans;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  margin-top: 1.2rem;
+  color: #000000;
+  padding-left: 1.7rem;
+}
+
+.precio-card__features li::before {
+  content: "☑";
+  position: absolute;
+  left: 0;
+  color: #55DFB4;
+  font-size: 1rem;
+}
+
+.precio-card__features li.unavailable::before {
+  content: "☒";
+  color: #EB476E;
+}
+
+.precio-card__button {
+  display: inline-block;
+  padding: 1rem 3.6rem;
+  border: none;
+  border-radius: 50px;
+  font-family: Open Sans;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #EB476E;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.basic {
+  border-color: #FB3B64;
+}
+
+.basic .precio-card__price {
+  color: #FB3B64;
+}
+
+.basic .precio-card__button {
+  background-color: #FB3B64;
+}
+
+.professional {
+  border-color: #07ACE6;
+}
+
+.professional .precio-card__price {
+  color: #07ACE6;
+}
+
+.professional .precio-card__button {
+  background-color: #07ACE6;
+}
+
+.premium {
+  border-color: #55DFB4;
+}
+
+.premium .precio-card__price {
+  color: #55DFB4;
+}
+
+.premium .precio-card__button {
+  background-color: #55DFB4;
+}
+
+@media (min-width: 768px) {
+  .precio-cards {
+    display: flex;
+    justify-content: space-around;
+  }
+  .precio-card {
+    width: 30%;
+  }
+  .precio-card__button {
+    bottom: 10px;
+  }
+}/*# sourceMappingURL=styles.css.map */

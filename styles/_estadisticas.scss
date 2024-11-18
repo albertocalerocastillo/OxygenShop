@@ -1,0 +1,76 @@
+.estadisticas {
+    text-align: center;
+    padding: 0.5rem 1rem;
+    
+    &__title {
+        font-family: Raleway;
+        font-size: 1.9rem;
+        font-weight: 500;
+        margin-bottom: 2rem;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    &__iconos {
+        max-width: 258px;
+        min-width: 258px;
+        margin: 0 auto;
+    }
+
+    &__item {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 2rem;
+        text-align: center;
+        position: relative;
+    }
+
+    &__circulo {
+        margin: 0 auto 1rem;
+        z-index: 0;
+        position: relative;
+        display: block;
+    }
+
+    &__persona {
+        margin: 0 auto 1rem;
+        z-index: 1;
+        margin-top: -77px;
+        margin-bottom: 25px;
+        margin-right: 86px;
+        position: relative;
+        display: block;
+    }
+
+    &__ojo {
+        margin-top: -68px;
+        margin-bottom: 1.8rem;
+        margin-left: 117px;
+        position: relative;
+        display: block;
+    }
+
+    &__post {
+        margin-top: -72px;
+        margin-bottom: 1.8rem;
+        margin-left: 130px;
+        position: relative;
+        display: block;
+    }
+
+    &__number {
+        font-size: 1.3rem;
+        font-family: Raleway;
+        font-weight: bold;
+        display: block;
+        letter-spacing: 0.25em;
+        margin-top: 10px;
+    }
+
+    &__label {
+        color: #A5A5A5;
+        font-family: Raleway;
+        font-size: 1rem;
+        margin-top: 15px;
+    }
+}

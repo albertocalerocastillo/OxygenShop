@@ -1,0 +1,92 @@
+.caracteristicas {
+    background-color: #F7F7F7;
+    padding: 2rem 1rem;
+    text-align: center;
+
+    &__card {
+        background-color: #FFFFFF;
+        border-radius: 6px;
+        border: 1px solid #E8E9ED;
+        padding: 1.5rem;
+        margin: 1rem auto;
+        width: 95%;
+        max-width: 400px;
+        display: inline-block;
+        text-align: left;
+    }
+
+    &__iconos {
+        max-width: 258px;
+        min-width: 258px;
+        margin: 0 auto;
+    }
+
+    &__iconosfull {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    &__dispositivolap {
+        margin: 0 auto 1rem;
+        z-index: 1;
+        margin-top: 10px;
+        position: relative;
+        display: block;
+    }
+
+    &__bolaroja {
+        margin: 0 auto 1rem;
+        z-index: 0;
+        margin-top: -150px;
+        margin-bottom: 60px;
+        margin-right: 26px;
+        display: block;
+    }
+
+    &__dispositivomov {
+        margin: 0 auto 1rem;
+        z-index: 1;
+        margin-left: 65px;
+        position: relative;
+        display: block;
+    }
+
+    &__bolaazul {
+        margin: 0 auto 1rem;
+        z-index: 0;
+        margin-top: -160px;
+        margin-bottom: 40px;
+        display: block;
+    }
+
+    &__trompeta {
+        margin: 0 auto 1rem;
+        z-index: 1;
+        position: relative;
+        display: block;
+    }
+
+    &__fondoverde {
+        width: 100%;
+        margin: 0 auto 1rem;
+        z-index: 0;
+        margin-top: -210px;
+        display: block;
+    }
+
+    &__title {
+        font-family: Raleway;
+        font-size: 1.8rem;
+        font-weight: 500;
+        margin-bottom: 1.3rem;
+        color: #000000;
+    }
+
+    &__description {
+        font-family: Open Sans;
+        font-size: 0.9rem;
+        color: #000000;
+        line-height: 1.6;
+    }
+}

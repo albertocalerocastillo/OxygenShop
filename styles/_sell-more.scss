@@ -1,0 +1,40 @@
+.sell-more {
+    text-align: center;
+    padding: 5.7rem 3rem;
+
+    &__title {
+        font-family: Raleway;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        font-weight: 500;
+    }
+
+    &__description {
+        font-family: Open Sans;
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    &__button {
+        background-color: #08A6E4;
+        color: #FFFFFF;
+        font-family: Open Sans;
+        font-weight: bold;
+        border: none;
+        border-radius: 200px;
+        padding: 1.3rem 4.3rem;
+        font-size: 1rem;
+        cursor: pointer;
+        box-shadow: 0 8px 8px #07ACE64A;
+    }
+}
+
+.image-section {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    &__image {
+        width: 100%;
+        display: inline-block;
+    }
+}

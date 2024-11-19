@@ -1,0 +1,103 @@
+.contacto-form {
+    text-align: left;
+    padding: 2rem 1rem;
+    margin: -50px auto;
+    margin-left: 16px;
+    margin-right: 16px;
+    max-width: 600px;
+  
+    &__title {
+      font-size: 2.4rem;
+      font-family: Raleway;
+      font-weight: 500;
+      color: #000000;
+      margin-bottom: 0.1rem;
+    }
+  
+    &__subtitle {
+      font-size: 0.95rem;
+      font-family: Open Sans;
+      color: #000000;
+      margin-bottom: 2rem;
+    }
+  
+    &__info {
+      display: block;
+      margin-bottom: 2.7rem;
+    }
+  
+    &__email,
+    &__phone {
+      display: block;
+      font-size: 1rem;
+      font-family: Open Sans;
+      color: #A5A5A5;
+      font-weight: 500;
+      margin: 0.5rem 0;
+    }
+  
+    &__icon {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 0.5rem;
+    }
+  
+    &__inputs {
+      text-align: left;
+    }
+  
+    &__label {
+      display: block;
+      font-size: 0.75rem;
+      font-family: Open Sans;
+      letter-spacing: 0.20em;
+      color: #08A6E4;
+    }
+
+    &__checkbox {
+      margin-top: 1rem;
+  
+      input[type="checkbox"] {
+        margin-right: 5px;
+      }
+  
+      label {
+        display: inline;
+        font-size: 0.7rem;
+        font-family: Open Sans;
+        letter-spacing: 0em;
+        color: #707070;
+      }
+    }
+
+    &__input {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid #95989A;
+      padding: 0.8rem;
+      margin-bottom: 1.5rem;
+      font-size: 1rem;
+      outline: none;
+    }
+  
+    &__submit {
+      display: block;
+      margin-left: auto;
+      margin-right: 0;
+      margin-top: 2rem;
+      margin-bottom: 0.8rem;
+      padding: 1.2rem 6rem;
+      background-color: #08A6E4;
+      color: white;
+      box-shadow: 0 8px 8px #07ACE64A;
+      font-size: 0.8rem;
+      font-family: Open Sans;
+      font-weight: bold;
+      border: none;
+      border-radius: 37px;
+      cursor: pointer;
+      text-align: center;
+      transition: background-color 0.3s ease;
+    }
+  }
+  

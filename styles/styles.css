@@ -447,4 +447,93 @@ body {
   .precio-card__button {
     bottom: 10px;
   }
+}
+.contacto-form {
+  text-align: left;
+  padding: 2rem 1rem;
+  margin: -50px auto;
+  margin-left: 16px;
+  margin-right: 16px;
+  max-width: 600px;
+}
+.contacto-form__title {
+  font-size: 2.4rem;
+  font-family: Raleway;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 0.1rem;
+}
+.contacto-form__subtitle {
+  font-size: 0.95rem;
+  font-family: Open Sans;
+  color: #000000;
+  margin-bottom: 2rem;
+}
+.contacto-form__info {
+  display: block;
+  margin-bottom: 2.7rem;
+}
+.contacto-form__email, .contacto-form__phone {
+  display: block;
+  font-size: 1rem;
+  font-family: Open Sans;
+  color: #A5A5A5;
+  font-weight: 500;
+  margin: 0.5rem 0;
+}
+.contacto-form__icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+.contacto-form__inputs {
+  text-align: left;
+}
+.contacto-form__label {
+  display: block;
+  font-size: 0.75rem;
+  font-family: Open Sans;
+  letter-spacing: 0.2em;
+  color: #08A6E4;
+}
+.contacto-form__checkbox {
+  margin-top: 1rem;
+}
+.contacto-form__checkbox input[type=checkbox] {
+  margin-right: 5px;
+}
+.contacto-form__checkbox label {
+  display: inline;
+  font-size: 0.7rem;
+  font-family: Open Sans;
+  letter-spacing: 0em;
+  color: #707070;
+}
+.contacto-form__input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #95989A;
+  padding: 0.8rem;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  outline: none;
+}
+.contacto-form__submit {
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+  padding: 1.2rem 6rem;
+  background-color: #08A6E4;
+  color: white;
+  box-shadow: 0 8px 8px rgba(7, 172, 230, 0.2901960784);
+  font-size: 0.8rem;
+  font-family: Open Sans;
+  font-weight: bold;
+  border: none;
+  border-radius: 37px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
 }/*# sourceMappingURL=styles.css.map */

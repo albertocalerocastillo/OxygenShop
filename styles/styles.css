@@ -172,7 +172,6 @@ body {
   background-color: #FFFFFF;
   border-radius: 6px;
   border: 1px solid #E8E9ED;
-  padding: 1.5rem;
   margin: 1rem auto;
   width: 95%;
   max-width: 400px;
@@ -183,6 +182,7 @@ body {
   max-width: 258px;
   min-width: 258px;
   margin: 0 auto;
+  margin-top: 2.2rem;
 }
 .caracteristicas__iconosfull {
   position: relative;
@@ -219,14 +219,16 @@ body {
   display: block;
 }
 .caracteristicas__trompeta {
-  margin: 0 auto 1rem;
+  margin: 0.7rem auto;
+  margin-bottom: -14.4rem;
+  margin-left: -1rem;
   z-index: 1;
   position: relative;
   display: block;
 }
 .caracteristicas__fondoverde {
   width: 100%;
-  margin: 0 auto 1rem;
+  margin: 0 auto;
   z-index: 0;
   margin-top: -210px;
   display: block;
@@ -236,6 +238,18 @@ body {
   font-size: 1.8rem;
   font-weight: 500;
   margin-bottom: 1.3rem;
+  margin-left: 1.3rem;
+  margin-right: 2.3rem;
+  color: #000000;
+}
+.caracteristicas__titlegreencard {
+  font-family: Raleway;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 1.5rem;
+  margin-bottom: 1.3rem;
+  margin-left: 1.3rem;
+  margin-right: 2.3rem;
   color: #000000;
 }
 .caracteristicas__description {
@@ -243,6 +257,18 @@ body {
   font-size: 0.9rem;
   color: #000000;
   line-height: 1.6;
+  margin-left: 1.3rem;
+  margin-right: 2.3rem;
+  margin-bottom: 1.8rem;
+}
+.caracteristicas__descriptiongreencard {
+  font-family: Open Sans;
+  font-size: 1rem;
+  color: #000000;
+  line-height: 1.6;
+  margin-left: 1.3rem;
+  margin-right: 2.3rem;
+  margin-bottom: 2.3rem;
 }
 
 .precios {
@@ -536,4 +562,34 @@ body {
   cursor: pointer;
   text-align: center;
   transition: background-color 0.3s ease;
+}
+
+.footer {
+  padding: 1.3rem 0;
+  margin-top: 3rem;
+  box-shadow: 0px -4px 14px rgba(0, 0, 0, 0.2);
+}
+.footer__title {
+  font-size: 1.5rem;
+  font-family: Raleway;
+  font-weight: 300;
+  color: #08A6E4;
+  margin-left: 0.9rem;
+}
+.footer__copyright {
+  font-size: 0.65rem;
+  font-family: Open Sans;
+  font-weight: 100;
+  color: #A5A5A5;
+  margin-left: 0.9rem;
+}
+.footer__social {
+  position: relative;
+  text-align: right;
+  margin-right: 1.7rem;
+  margin-top: -2rem;
+}
+.footer__icon {
+  display: inline-block;
+  margin-left: 1rem;
 }/*# sourceMappingURL=styles.css.map */

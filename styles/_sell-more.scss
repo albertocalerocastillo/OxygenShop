@@ -18,14 +18,29 @@
     &__button {
         background-color: #08A6E4;
         color: #FFFFFF;
+        font-size: 1rem;
         font-family: Open Sans;
         font-weight: bold;
         border: none;
         border-radius: 200px;
         padding: 1.3rem 4.3rem;
-        font-size: 1rem;
         cursor: pointer;
         box-shadow: 0 8px 8px #07ACE64A;
+    }
+
+    @media only screen and (min-width: 1000px) {
+        &__title {
+            font-size: 3rem;
+        }
+    
+        &__description {
+            font-size: 1rem;
+        }
+        &__button {
+            font-size: 0.8rem;
+            padding: 1.3rem 10rem;
+            font-weight: 600;
+        }
     }
 }
 
@@ -36,5 +51,11 @@
     &__image {
         width: 100%;
         display: inline-block;
+    }
+    @media only screen and (min-width: 1000px) {
+        &__image {
+            margin-top: -6rem;
+            content: url('../images/InicioGrande.png');
+        }
     }
 }

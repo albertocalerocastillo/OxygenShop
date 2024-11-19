@@ -4,13 +4,41 @@
     border-bottom: 1px solid #FFFFFF;
     box-shadow: 0 2px 6px #0000004A;
     width: 100%;
-    
+
     &__logo {
         color: #08A6E4;
         font-family: Raleway;
         font-size: 2rem;
-        display: inline-block;
         font-weight: 400;
+    }
+
+    &__menu {
+        display: none;
+        list-style: none;
+        
+
+        li {
+            display: inline-block;
+            margin: 0 1rem;
+
+            a {
+                text-decoration: none;
+                color: #A5A5A5;
+                font-family: Open Sans;
+                font-weight: 500;
+                font-size: 0.7rem;
+                letter-spacing: 0.25em;
+                margin-left: 2rem;
+                margin-right: 4rem;
+
+                &:hover {
+                    color: #000000;
+                    font-weight: bold;
+                    padding-bottom: 27px;
+                    border-bottom: 3px solid #08A6E4;
+                }
+            }
+        }
     }
 
     &__menu-button {
@@ -22,32 +50,18 @@
         color: #07ACE6;
         cursor: pointer;
     }
-}
 
-.main-content {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-@media only screen and (min-width: 1000px) {
-    .main-content {
-        max-width: 1000px;
-        margin: 0 auto;
-    }
-    
-    .estadisticas {
-        display: flex;
-        justify-content: space-around;
-
-        &__item {
-            width: 30%;
-            margin-bottom: 0;
-        }
-    }
-
-    .header {
+    @media only screen and (min-width: 1000px) {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        &__menu-button {
+            display: none;
+        }
+
+        &__menu {
+            display: flex;
+        }
     }
 }

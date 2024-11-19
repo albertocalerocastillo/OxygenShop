@@ -73,4 +73,38 @@
         font-size: 1rem;
         margin-top: 15px;
     }
+
+    @media only screen and (min-width: 1000px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5rem;
+
+        &__title {
+            font-size: 2.2rem;
+            margin-bottom: 2.5rem;
+        }
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            margin: 0 1rem;
+            text-align: center;
+        }
+
+        &__container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 2rem auto;
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        &__label {
+            text-align: center;
+            padding-left: 5rem;
+            padding-right: 5rem;
+        }
+    }
 }

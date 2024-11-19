@@ -20,8 +20,31 @@ body {
   color: #08A6E4;
   font-family: Raleway;
   font-size: 2rem;
-  display: inline-block;
   font-weight: 400;
+}
+.header__menu {
+  display: none;
+  list-style: none;
+}
+.header__menu li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+.header__menu li a {
+  text-decoration: none;
+  color: #A5A5A5;
+  font-family: Open Sans;
+  font-weight: 500;
+  font-size: 0.7rem;
+  letter-spacing: 0.25em;
+  margin-left: 2rem;
+  margin-right: 4rem;
+}
+.header__menu li a:hover {
+  color: #000000;
+  font-weight: bold;
+  padding-bottom: 27px;
+  border-bottom: 3px solid #08A6E4;
 }
 .header__menu-button {
   position: absolute;
@@ -32,31 +55,20 @@ body {
   color: #07ACE6;
   cursor: pointer;
 }
-
-.main-content {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
 @media only screen and (min-width: 1000px) {
-  .main-content {
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-  .estadisticas {
-    display: flex;
-    justify-content: space-around;
-  }
-  .estadisticas__item {
-    width: 30%;
-    margin-bottom: 0;
-  }
   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+  .header__menu-button {
+    display: none;
+  }
+  .header__menu {
+    display: flex;
+  }
 }
+
 .sell-more {
   text-align: center;
   padding: 5.7rem 3rem;
@@ -75,14 +87,27 @@ body {
 .sell-more__button {
   background-color: #08A6E4;
   color: #FFFFFF;
+  font-size: 1rem;
   font-family: Open Sans;
   font-weight: bold;
   border: none;
   border-radius: 200px;
   padding: 1.3rem 4.3rem;
-  font-size: 1rem;
   cursor: pointer;
   box-shadow: 0 8px 8px rgba(7, 172, 230, 0.2901960784);
+}
+@media only screen and (min-width: 1000px) {
+  .sell-more__title {
+    font-size: 3rem;
+  }
+  .sell-more__description {
+    font-size: 1rem;
+  }
+  .sell-more__button {
+    font-size: 0.8rem;
+    padding: 1.3rem 10rem;
+    font-weight: 600;
+  }
 }
 
 .image-section {
@@ -93,6 +118,12 @@ body {
 .image-section__image {
   width: 100%;
   display: inline-block;
+}
+@media only screen and (min-width: 1000px) {
+  .image-section__image {
+    margin-top: -6rem;
+    content: url("../images/InicioGrande.png");
+  }
 }
 
 .estadisticas {
@@ -162,6 +193,37 @@ body {
   font-size: 1rem;
   margin-top: 15px;
 }
+@media only screen and (min-width: 1000px) {
+  .estadisticas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+  .estadisticas__title {
+    font-size: 2.2rem;
+    margin-bottom: 2.5rem;
+  }
+  .estadisticas__item {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+    text-align: center;
+  }
+  .estadisticas__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2rem auto;
+    max-width: 1000px;
+    width: 100%;
+  }
+  .estadisticas__label {
+    text-align: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
 
 .caracteristicas {
   background-color: #F7F7F7;
@@ -196,6 +258,11 @@ body {
   position: relative;
   display: block;
 }
+@media only screen and (min-width: 1000px) {
+  .caracteristicas__dispositivolap {
+    content: url("../images/LaptopGrande.png");
+  }
+}
 .caracteristicas__bolaroja {
   margin: 0 auto 1rem;
   z-index: 0;
@@ -204,6 +271,11 @@ body {
   margin-right: 26px;
   display: block;
 }
+@media only screen and (min-width: 1000px) {
+  .caracteristicas__bolaroja {
+    content: url("../images/Cuadrado.png");
+  }
+}
 .caracteristicas__dispositivomov {
   margin: 0 auto 1rem;
   z-index: 1;
@@ -211,12 +283,22 @@ body {
   position: relative;
   display: block;
 }
+@media only screen and (min-width: 1000px) {
+  .caracteristicas__dispositivomov {
+    content: url("../images/MovilGrande.png");
+  }
+}
 .caracteristicas__bolaazul {
   margin: 0 auto 1rem;
   z-index: 0;
   margin-top: -160px;
   margin-bottom: 40px;
   display: block;
+}
+@media only screen and (min-width: 1000px) {
+  .caracteristicas__bolaazul {
+    content: url("../images/PelotaAzul.png");
+  }
 }
 .caracteristicas__trompeta {
   margin: 0.7rem auto;
@@ -269,6 +351,76 @@ body {
   margin-left: 1.3rem;
   margin-right: 2.3rem;
   margin-bottom: 2.3rem;
+}
+@media only screen and (min-width: 1000px) {
+  .caracteristicas__card {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 1rem auto;
+    width: 100%;
+    max-width: 1000px;
+    text-align: left;
+    margin-top: 3rem;
+  }
+  .caracteristicas__contenidorojo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: -8rem;
+  }
+  .caracteristicas__contenidoazul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: -8rem;
+  }
+  .caracteristicas__iconos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .caracteristicas__dispositivolap {
+    display: block;
+    margin-left: 10rem;
+    margin-top: 12rem;
+  }
+  .caracteristicas__dispositivomov {
+    display: block;
+    margin-left: -20rem;
+    margin-top: 12rem;
+  }
+  .caracteristicas__bolaroja {
+    display: block;
+    margin-left: 20rem;
+    margin-top: -19rem;
+    margin-bottom: 5rem;
+  }
+  .caracteristicas__bolaazul {
+    display: block;
+    margin-left: -20rem;
+    margin-top: -19rem;
+    margin-bottom: 5rem;
+  }
+  .caracteristicas__textrojo {
+    position: absolute;
+    width: 25%;
+    text-align: left;
+    margin-top: 7rem;
+    border-bottom: 3px solid #FB3B64;
+  }
+  .caracteristicas__textazul {
+    position: absolute;
+    width: 25%;
+    text-align: left;
+    margin-top: 7rem;
+    margin-left: 32.65rem;
+    border-bottom: 3px solid #08A6E4;
+  }
 }
 
 .precios {
@@ -497,7 +649,6 @@ body {
 }
 .contacto-form__info {
   display: block;
-  margin-bottom: 2.7rem;
 }
 .contacto-form__email, .contacto-form__phone {
   display: block;
@@ -514,6 +665,7 @@ body {
 }
 .contacto-form__inputs {
   text-align: left;
+  margin-top: 3rem;
 }
 .contacto-form__label {
   display: block;
@@ -523,17 +675,20 @@ body {
   color: #08A6E4;
 }
 .contacto-form__checkbox {
+  display: inline-block;
   margin-top: 1rem;
 }
-.contacto-form__checkbox input[type=checkbox] {
-  margin-right: 5px;
+.contacto-form__cuadrado {
+  vertical-align: middle;
 }
-.contacto-form__checkbox label {
+.contacto-form__description {
   display: inline;
   font-size: 0.7rem;
   font-family: Open Sans;
   letter-spacing: 0em;
   color: #707070;
+  vertical-align: middle;
+  margin: 0;
 }
 .contacto-form__input {
   width: 100%;

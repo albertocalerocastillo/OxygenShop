@@ -33,6 +33,10 @@
         margin-top: 10px;
         position: relative;
         display: block;
+
+        @media only screen and (min-width: 1000px) {
+            content: url('../images/LaptopGrande.png');
+        }
     }
 
     &__bolaroja {
@@ -42,6 +46,10 @@
         margin-bottom: 60px;
         margin-right: 26px;
         display: block;
+
+        @media only screen and (min-width: 1000px) {
+            content: url('../images/Cuadrado.png');
+        }
     }
 
     &__dispositivomov {
@@ -50,6 +58,10 @@
         margin-left: 65px;
         position: relative;
         display: block;
+
+        @media only screen and (min-width: 1000px) {
+            content: url('../images/MovilGrande.png');
+        }
     }
 
     &__bolaazul {
@@ -58,6 +70,10 @@
         margin-top: -160px;
         margin-bottom: 40px;
         display: block;
+
+        @media only screen and (min-width: 1000px) {
+            content: url('../images/PelotaAzul.png');
+        }
     }
 
     &__trompeta {
@@ -116,5 +132,85 @@
         margin-left: 1.3rem;
         margin-right: 2.3rem;
         margin-bottom: 2.3rem;
+    }
+
+    @media only screen and (min-width: 1000px) {
+        &__card {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            margin: 1rem auto;
+            width: 100%;
+            max-width: 1000px;
+            text-align: left;
+            margin-top: 3rem;
+        }
+
+        &__contenidorojo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin-top: -8rem;
+        }
+
+        &__contenidoazul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin-top: -8rem;
+        }
+
+        &__iconos {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        &__dispositivolap{
+            display: block;
+            margin-left: 10rem;
+            margin-top: 12rem;
+        }
+
+        &__dispositivomov{
+            display: block;
+            margin-left: -20rem;
+            margin-top: 12rem;
+        }
+
+        &__bolaroja {
+            display: block;
+            margin-left: 20rem;
+            margin-top: -19rem;
+            margin-bottom: 5rem;
+        }
+
+        &__bolaazul {
+            display: block;
+            margin-left: -20rem;
+            margin-top: -19rem;
+            margin-bottom: 5rem;
+        }
+
+        &__textrojo {
+            position: absolute;
+            width: 25%;
+            text-align: left;
+            margin-top: 7rem;
+            border-bottom: 3px solid #FB3B64;
+        }
+
+        &__textazul {
+            position: absolute;
+            width: 25%;
+            text-align: left;
+            margin-top: 7rem;
+            margin-left: 32.65rem;
+            border-bottom: 3px solid #08A6E4;
+        }
     }
 }

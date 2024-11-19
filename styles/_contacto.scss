@@ -23,7 +23,6 @@
   
     &__info {
       display: block;
-      margin-bottom: 2.7rem;
     }
   
     &__email,
@@ -44,6 +43,7 @@
   
     &__inputs {
       text-align: left;
+      margin-top: 3rem;
     }
   
     &__label {
@@ -55,19 +55,22 @@
     }
 
     &__checkbox {
+      display: inline-block;
       margin-top: 1rem;
-  
-      input[type="checkbox"] {
-        margin-right: 5px;
+    }
+
+    &__cuadrado {
+      vertical-align: middle;
       }
-  
-      label {
+
+     &__description {
         display: inline;
         font-size: 0.7rem;
         font-family: Open Sans;
         letter-spacing: 0em;
         color: #707070;
-      }
+        vertical-align: middle;
+        margin: 0;
     }
 
     &__input {

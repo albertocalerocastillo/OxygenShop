@@ -9,12 +9,18 @@
 </head>
 <body>
 
-    <header class="header">
+    <nav class="header">
         <h1 class="header__logo">OXYGENShop</h1>
+        <ul class="header__menu">
+            <li><a href="#why-us">WHY US</a></li>
+            <li><a href="#benefits">BENEFITS</a></li>
+            <li><a href="#prices">PRICES</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
         <button class="header__menu-button">
             <img src="./images/Menu.png" alt="Menu principal">
         </button>
-    </header>
+    </nav>
 
     <main class="main-content">
         
@@ -30,55 +36,65 @@
 
         <section class="estadisticas">
             <h2 class="estadisticas__title">The most popular sales platform in country</h2>
-
-            <article class="estadisticas__item">
-                <div class="estadisticas__iconos">
-                    <img src="./images/BolaRojaPequeña.png" alt="Icono de bola roja pequeña" class="estadisticas__circulo">
-                    <img src="./images/Person.png" alt="Icono de persona" class="estadisticas__persona">
-                </div>
-                <p class="estadisticas__number">100000+</p>
-                <p class="estadisticas__label">daily entries</p>
-            </article>
-
-            <article class="estadisticas__item">
-                <div class="estadisticas__iconos">
-                    <img src="./images/BolaAzulPequeña.png" alt="Icono de bola azul pequeña" class="estadisticas__circulo">
-                    <img src="./images/Ojo.png" alt="Icono de ojo" class="estadisticas__ojo">
-                </div>
-                <p class="estadisticas__number">2000000+</p>
-                <p class="estadisticas__label">seen products every day</p>
-            </article>
-
-            <article class="estadisticas__item">
-                <div class="estadisticas__iconos">
-                    <img src="./images/BolaVerde.png" alt="Icono de bola verde" class="estadisticas__circulo">
-                    <img src="./images/Post.png" alt="Icono de post" class="estadisticas__post">
-                </div>
-                <p class="estadisticas__number">10000+</p>
-                <p class="estadisticas__label">added posts daily</p>
-            </article>
+            <div class="estadisticas__container">
+                <article class="estadisticas__item">
+                    <div class="estadisticas__iconos">
+                        <img src="./images/BolaRojaPequeña.png" alt="Icono de bola roja pequeña" class="estadisticas__circulo">
+                        <img src="./images/Person.png" alt="Icono de persona" class="estadisticas__persona">
+                    </div>
+                    <p class="estadisticas__number">100000+</p>
+                    <p class="estadisticas__label">daily entries</p>
+                </article>
+        
+                <article class="estadisticas__item">
+                    <div class="estadisticas__iconos">
+                        <img src="./images/BolaAzulPequeña.png" alt="Icono de bola azul pequeña" class="estadisticas__circulo">
+                        <img src="./images/Ojo.png" alt="Icono de ojo" class="estadisticas__ojo">
+                    </div>
+                    <p class="estadisticas__number">2000000+</p>
+                    <p class="estadisticas__label">seen products every day</p>
+                </article>
+        
+                <article class="estadisticas__item">
+                    <div class="estadisticas__iconos">
+                        <img src="./images/BolaVerde.png" alt="Icono de bola verde" class="estadisticas__circulo">
+                        <img src="./images/Post.png" alt="Icono de post" class="estadisticas__post">
+                    </div>
+                    <p class="estadisticas__number">10000+</p>
+                    <p class="estadisticas__label">added posts daily</p>
+                </article>
+            </div>
         </section>
+        
 
         <section class="caracteristicas">
             <article class="caracteristicas__card">
-                <div class="caracteristicas__iconos">
-                    <img src="./images/Laptop.png" alt="Icono de laptop" class="caracteristicas__dispositivolap">
-                    <img src="./images/BolaRojaGrande.png" alt="Icono de bola roja grande" class="caracteristicas__bolaroja">
+                <div class="caracteristicas__contenidorojo">
+                    <div class="caracteristicas__iconos">
+                        <img src="./images/Laptop.png" alt="Icono de laptop" class="caracteristicas__dispositivolap">
+                        <img src="./images/BolaRojaGrande.png" alt="Icono de bola roja grande" class="caracteristicas__bolaroja">
+                    </div>
+                    <div class="caracteristicas__textrojo">
+                        <h3 class="caracteristicas__title">Be always first</h3>
+                        <p class="caracteristicas__description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                        </p>
+                    </div>
                 </div>
-                <h3 class="caracteristicas__title">Be always first</h3>
-                <p class="caracteristicas__description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                </p>
             </article>
             <article class="caracteristicas__card">
-                <div class="caracteristicas__iconos">
-                    <img src="./images/Movil.png" alt="Icono de movil" class="caracteristicas__dispositivomov">
-                    <img src="./images/BolaAzulGrande.png" alt="Icono de bola azul grande" class="caracteristicas__bolaazul">
+                <div class="caracteristicas__contenidoazul">
+                    <div class="caracteristicas__iconos">
+                        <img src="./images/Movil.png" alt="Icono de movil" class="caracteristicas__dispositivomov">
+                        <img src="./images/BolaAzulGrande.png" alt="Icono de bola azul grande" class="caracteristicas__bolaazul">
+                    </div>
+                <div class="caracteristicas__textazul">
+                        <h3 class="caracteristicas__title">Your shop is where you are!</h3>
+                        <p class="caracteristicas__description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                        </p>
                 </div>
-                <h3 class="caracteristicas__title">Your shop is where you are!</h3>
-                <p class="caracteristicas__description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                </p>
+            </div>
             </article>
             <article class="caracteristicas__card">
                 <h3 class="caracteristicas__titlegreencard">Increase recognition your brand!</h3>
@@ -163,13 +179,13 @@
                 <input type="email" id="email" name="email" class="contacto-form__input" />
         
                 <div class="contacto-form__checkbox">
-                    <input type="checkbox" id="consent" name="consent" />
-                    <label for="consent" class="contacto-form__label">
+                    <input type="checkbox" class="contacto-form__cuadrado" />
+                    <p class="contacto-form__description">
                         I hereby give consent for my personal data included in my application to be processed for the purposes of
                         the recruitment process under the European Parliament's and Council of the European Union Regulation
                         on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data
                         and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive).
-                    </label>
+                    </p>
                 </div>
         
                 <button type="button" class="contacto-form__submit">Send</button>

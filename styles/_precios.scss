@@ -4,7 +4,7 @@
 }
 
 .precios__title {
-    font-family: Raleway, sans-serif;
+    font-family: Raleway;
     font-size: 2.4rem;
     font-weight: 500;
     margin-top: 1.2rem;
@@ -20,9 +20,9 @@
 .precio-card {
     position: relative;
     padding: 2rem;
-    border: 2px solid #ccc;
+    border: 2px solid;
     border-radius: 17px;
-    background-color: #fff;
+    background-color: #FFFFFF;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     margin-bottom: 60px;
 }
@@ -111,7 +111,7 @@
     margin-bottom: 1.5rem;
     text-align: left; 
     position: relative;
-    left: 4.5rem;
+    left: 3.8rem;
     display: inline-block;
 }
 
@@ -124,19 +124,6 @@
     padding-left: 1.7rem;
 }
 
-.precio-card__features li::before {
-    content: "☑";
-    position: absolute;
-    left: 0;
-    color: #55DFB4;
-    font-size: 1rem;
-}
-
-.precio-card__features li.unavailable::before {
-    content: "☒";
-    color: #EB476E;
-}
-
 .precio-card__button {
     display: inline-block;
     padding: 1rem 3.6rem;
@@ -145,7 +132,7 @@
     font-family: Open Sans;
     font-size: 0.9rem;
     font-weight: bold;
-    color: #fff;
+    color: #FFFFFF;
     cursor: pointer;
     transition: all 0.3s ease;
     background-color: #EB476E;
@@ -191,17 +178,92 @@
     background-color: #55DFB4;
 }
 
-@media (min-width: 768px) {
+.precio-card__features li span {
+    color: #55DFB4;
+    text-align:center;
+    margin-right:3px;
+    font-size: 1rem;
+}
+
+.precio-card__features li.unavailable span{
+    text-align:center;
+    font-size: 1rem;
+    margin-right:3px;
+    color: #EB476E;
+}
+
+@media only screen and (min-width: 1000px) {
     .precio-cards {
         display: flex;
-        justify-content: space-around;
+        margin-top: 3rem;
+        justify-content: space-around; 
+        align-items: flex-start; 
+        gap: 2rem; 
+        margin: auto;
+        max-width: 1400px;
     }
 
     .precio-card {
-        width: 30%;
+        display: flex;
+        flex-direction: column; 
+        width: 30%; 
+    }
+
+    .precio-card__paquete {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+        position: static; 
+        margin-top: 2rem;
+    }
+
+    .precio-card__features {
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        left: 0rem;
+        text-align: center;
+    }
+
+    .precio-card__features li {
+        padding-left: 0rem;
     }
 
     .precio-card__button {
-        bottom: 10px;
+        margin-top: 1rem;
+        align-self: center; 
+    }
+
+    .precios__title {
+        margin-top: 6rem;
+        margin-bottom: 2.8rem;
+    }
+
+    .precio-card__planProfessional {
+        margin-left: 0px;
+        margin-bottom: 13px;
+    }
+    
+    
+    .precio-card__planPremium {
+        margin-left: 0px;
+        margin-bottom: 13px;
+    }
+
+    .precio-card__planBasic {
+        margin-bottom: 13px;
+    }
+
+    .precio-card__price span {
+        font-size: 0.8rem;
+        font-weight: bold;
+        color: #13253B;
+        display: block;
+        margin-top: 10px;
+    }
+
+    .precio-card.basic {
+        padding-bottom: 58px;
     }
 }

@@ -83,6 +83,10 @@
         z-index: 1;
         position: relative;
         display: block;
+
+        @media only screen and (min-width: 1000px) {
+            content: url('../images/TrompetaEscritorio.png');
+        }
     }
 
     &__fondoverde {
@@ -91,6 +95,10 @@
         z-index: 0;
         margin-top: -210px;
         display: block;
+
+        @media only screen and (min-width: 1000px) {
+            content: url('../images/FondoVerdeEscritorio.png');
+        }
     }
 
     &__title {
@@ -162,6 +170,14 @@
             margin-top: -8rem;
         }
 
+        &__contenidoverde {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin-top: -8rem;
+        }
+
         &__iconos {
             width: 100%;
             display: flex;
@@ -179,6 +195,13 @@
         &__dispositivomov{
             display: block;
             margin-left: -20rem;
+            margin-top: 7rem;
+            margin-bottom: 5.5rem;
+        }
+
+        &__trompeta{
+            display: block;
+            margin-left: 40.5rem;
             margin-top: 12rem;
         }
 
@@ -192,8 +215,15 @@
         &__bolaazul {
             display: block;
             margin-left: -20rem;
-            margin-top: -19rem;
-            margin-bottom: 5rem;
+            margin-top: -26.7rem;
+            margin-bottom: 2rem;
+        }
+
+        &__fondoverde {
+            width: 40%;
+            display: block;
+            margin-left: 37.5rem;
+            margin-top: -17.1rem;
         }
 
         &__textrojo {
@@ -206,11 +236,19 @@
 
         &__textazul {
             position: absolute;
+            width: 22%;
+            text-align: left;
+            margin-top: 7rem;
+            margin-left: 36.25rem;
+            border-bottom: 3px solid #08A6E4;
+        }
+
+        &__textverde {
+            position: absolute;
             width: 25%;
             text-align: left;
             margin-top: 7rem;
-            margin-left: 32.65rem;
-            border-bottom: 3px solid #08A6E4;
+            border-bottom: 3px solid #55DFB4;
         }
     }
 }

@@ -161,48 +161,49 @@
         </section>        
 
         <section class="contacto-form">
-            <h2 class="contacto-form__title">Any questions?</h2>
-            <p class="contacto-form__subtitle">Leave your email address or call us!</p>
-        
-            <div class="contacto-form__info">
-                <div class="contacto-form__email">
-                    <img src="./images/Mail.png" alt="Icono Email" class="contacto-form__icon" />
-                    info@bestshop.xyz
+            <div class="contacto-form__contenedorprincipal">
+                <div class="contacto-form__info">
+                    <h2 class="contacto-form__title">Any questions?</h2>
+                    <p class="contacto-form__subtitle">Leave your email address or call us!</p>
+                    <div class="contacto-form__email">
+                        <img src="./images/Mail.png" alt="Icono Email" class="contacto-form__icon" />
+                        info@bestshop.xyz
+                    </div>
+                    <div class="contacto-form__phone">
+                        <img src="./images/Telefono.png" alt="Icono Telefono" class="contacto-form__icon" />
+                        123 456 789
+                    </div>
                 </div>
-                <div class="contacto-form__phone">
-                    <img src="./images/Telefono.png" alt="Icono Telefono" class="contacto-form__icon" />
-                    123 456 789
-                </div>
+            
+                <form class="contacto-form__inputs">
+                    <label for="name" class="contacto-form__label">NAME</label>
+                    <input type="text" id="name" name="name" class="contacto-form__input"/>
+            
+                    <label for="email" class="contacto-form__label">EMAIL</label>
+                    <input type="email" id="email" name="email" class="contacto-form__input" />
+            
+                    <div class="contacto-form__checkbox">
+                        <input type="checkbox" class="contacto-form__cuadrado" />
+                        <p class="contacto-form__description">
+                            I hereby give consent for my personal data included in my application to be processed for the purposes of
+                            the recruitment process under the European Parliament's and Council of the European Union Regulation
+                            on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data
+                            and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive).
+                        </p>
+                    </div>
+            
+                    <button type="button" class="contacto-form__submit">Send</button>
+                </form>
             </div>
-        
-            <form class="contacto-form__inputs">
-                <label for="name" class="contacto-form__label">NAME</label>
-                <input type="text" id="name" name="name" class="contacto-form__input"/>
-        
-                <label for="email" class="contacto-form__label">EMAIL</label>
-                <input type="email" id="email" name="email" class="contacto-form__input" />
-        
-                <div class="contacto-form__checkbox">
-                    <input type="checkbox" class="contacto-form__cuadrado" />
-                    <p class="contacto-form__description">
-                        I hereby give consent for my personal data included in my application to be processed for the purposes of
-                        the recruitment process under the European Parliament's and Council of the European Union Regulation
-                        on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data
-                        and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive).
-                    </p>
-                </div>
-        
-                <button type="button" class="contacto-form__submit">Send</button>
-            </form>
         </section>
 
         <footer class="footer">
-            <div class="footer__title">
+            <h1 class="footer__title">
                 OXYGENShop
-            </div>
-            <div class="footer__copyright">
+            </h1>
+            <p class="footer__copyright">
                 © 2022 OXYGEN, All Rights Reserved
-            </div>
+            </p>
             <div class="footer__social">
                 <img src="./images/Twitter.png" alt="Twitter" class="footer__icon" />
                 <img src="./images/Facebook.png" alt="Facebook" class="footer__icon" />

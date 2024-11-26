@@ -436,14 +436,15 @@ body {
   }
   .caracteristicas__textrojo {
     position: absolute;
-    width: 25%;
+    width: 400px;
     text-align: left;
     margin-top: 7rem;
+    margin-left: 1rem;
     border-bottom: 3px solid #FB3B64;
   }
   .caracteristicas__textazul {
     position: absolute;
-    width: 22%;
+    width: 400px;
     text-align: left;
     margin-top: 7rem;
     margin-left: 36.25rem;
@@ -451,9 +452,10 @@ body {
   }
   .caracteristicas__textverde {
     position: absolute;
-    width: 25%;
+    width: 400px;
     text-align: left;
     margin-top: 7rem;
+    margin-left: 1rem;
     border-bottom: 3px solid #55DFB4;
   }
 }
@@ -770,8 +772,27 @@ body {
   left: 0;
   width: 20px;
   height: 20px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1.5px solid #95989A;
+  border-radius: 4px;
   vertical-align: middle;
   cursor: pointer;
+}
+.contacto-form__cuadrado:checked {
+  background-color: transparent;
+}
+.contacto-form__cuadrado:checked::before {
+  content: "";
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-50deg) scaleX(-1);
+  width: 0.6rem;
+  height: 0.3rem;
+  border: solid #08A6E4;
+  border-width: 0 1px 1px 0;
 }
 .contacto-form__description {
   display: inline-block;

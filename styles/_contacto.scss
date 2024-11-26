@@ -65,8 +65,27 @@
     left: 0;
     width: 20px;
     height: 20px;
+    appearance: none;
+    border: 1.5px solid #95989A;
+    border-radius: 4px;
     vertical-align: middle;
     cursor: pointer;
+
+          &:checked {
+            background-color: transparent;
+        }
+
+        &:checked::before {
+          content: "";
+          position: absolute;
+          top: 45%;
+          left: 50%;
+          transform: translate(-50%, -50%) rotate(-50deg)scaleX(-1);
+          width: 0.6rem;
+          height: 0.3rem;
+          border: solid #08A6E4;
+          border-width: 0 1px 1px 0;
+      }
     }
 
    &__description {

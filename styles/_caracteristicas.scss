@@ -228,15 +228,16 @@
 
         &__textrojo {
             position: absolute;
-            width: 25%;
+            width: 400px;
             text-align: left;
             margin-top: 7rem;
+            margin-left: 1rem;
             border-bottom: 3px solid #FB3B64;
         }
 
         &__textazul {
             position: absolute;
-            width: 22%;
+            width: 400px;
             text-align: left;
             margin-top: 7rem;
             margin-left: 36.25rem;
@@ -245,9 +246,10 @@
 
         &__textverde {
             position: absolute;
-            width: 25%;
+            width: 400px;
             text-align: left;
             margin-top: 7rem;
+            margin-left: 1rem;
             border-bottom: 3px solid #55DFB4;
         }
     }

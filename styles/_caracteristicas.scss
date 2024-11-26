@@ -101,7 +101,18 @@
         }
     }
 
-    &__title {
+    &__titleredcard {
+        font-family: Raleway;
+        font-size: 1.8rem;
+        font-weight: 500;
+        margin-bottom: 1.3rem;
+        margin-left: 1.3rem;
+        margin-right: 2.3rem;
+        color: #000000;
+    }
+
+    &__titlebluecard {
+        width: 200px;
         font-family: Raleway;
         font-size: 1.8rem;
         font-weight: 500;
@@ -122,7 +133,17 @@
         color: #000000;
     }
 
-    &__description {
+    &__descriptionredcard {
+        font-family: Open Sans;
+        font-size: 0.9rem;
+        color: #000000;
+        line-height: 1.6;
+        margin-left: 1.3rem;
+        margin-right: 2.3rem;
+        margin-bottom: 1.8rem;
+    }
+
+    &__descriptionbluecard {
         font-family: Open Sans;
         font-size: 0.9rem;
         color: #000000;
@@ -232,7 +253,17 @@
             text-align: left;
             margin-top: 7rem;
             margin-left: 1rem;
-            border-bottom: 3px solid #FB3B64;
+        }
+
+        &__descriptionredcard {
+            width: 380px;
+        }
+
+        &__linearoja {
+            background-color: #FB3B64;
+            height: 0.27em;
+            width: 70%;
+            margin-left: 1.2rem;
         }
 
         &__textazul {
@@ -241,7 +272,21 @@
             text-align: left;
             margin-top: 7rem;
             margin-left: 36.25rem;
-            border-bottom: 3px solid #08A6E4;
+        }
+
+        &__titlebluecard {
+            width: 250px;
+        }
+
+        &__descriptionbluecard {
+            width: 380px;
+        }
+
+        &__lineaazul {
+            background-color: #08A6E4;
+            height: 0.27em;
+            width: 75%;
+            margin-left: 1.2rem;
         }
 
         &__textverde {
@@ -250,7 +295,22 @@
             text-align: left;
             margin-top: 7rem;
             margin-left: 1rem;
-            border-bottom: 3px solid #55DFB4;
+        }
+
+        &__titlegreencard {
+            width: 300px;
+        }
+
+        &__descriptiongreencard {
+            width: 430px;
+        }
+
+
+        &__lineaverde {
+            background-color: #55DFB4;
+            height: 0.27em;
+            width: 82%;
+            margin-left: 1.2rem;
         }
     }
 }

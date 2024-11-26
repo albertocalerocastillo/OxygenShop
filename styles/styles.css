@@ -185,12 +185,12 @@ body {
   display: block;
   letter-spacing: 0.25em;
   margin-top: 10px;
+  margin-bottom: 15px;
 }
 .estadisticas__label {
   color: #A5A5A5;
   font-family: Raleway;
   font-size: 1rem;
-  margin-top: 15px;
 }
 @media only screen and (min-width: 1000px) {
   .estadisticas {
@@ -324,7 +324,17 @@ body {
     content: url("../images/FondoVerdeEscritorio.png");
   }
 }
-.caracteristicas__title {
+.caracteristicas__titleredcard {
+  font-family: Raleway;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+  margin-left: 1.3rem;
+  margin-right: 2.3rem;
+  color: #000000;
+}
+.caracteristicas__titlebluecard {
+  width: 200px;
   font-family: Raleway;
   font-size: 1.8rem;
   font-weight: 500;
@@ -343,7 +353,16 @@ body {
   margin-right: 2.3rem;
   color: #000000;
 }
-.caracteristicas__description {
+.caracteristicas__descriptionredcard {
+  font-family: Open Sans;
+  font-size: 0.9rem;
+  color: #000000;
+  line-height: 1.6;
+  margin-left: 1.3rem;
+  margin-right: 2.3rem;
+  margin-bottom: 1.8rem;
+}
+.caracteristicas__descriptionbluecard {
   font-family: Open Sans;
   font-size: 0.9rem;
   color: #000000;
@@ -440,7 +459,15 @@ body {
     text-align: left;
     margin-top: 7rem;
     margin-left: 1rem;
-    border-bottom: 3px solid #FB3B64;
+  }
+  .caracteristicas__descriptionredcard {
+    width: 380px;
+  }
+  .caracteristicas__linearoja {
+    background-color: #FB3B64;
+    height: 0.27em;
+    width: 70%;
+    margin-left: 1.2rem;
   }
   .caracteristicas__textazul {
     position: absolute;
@@ -448,7 +475,18 @@ body {
     text-align: left;
     margin-top: 7rem;
     margin-left: 36.25rem;
-    border-bottom: 3px solid #08A6E4;
+  }
+  .caracteristicas__titlebluecard {
+    width: 250px;
+  }
+  .caracteristicas__descriptionbluecard {
+    width: 380px;
+  }
+  .caracteristicas__lineaazul {
+    background-color: #08A6E4;
+    height: 0.27em;
+    width: 75%;
+    margin-left: 1.2rem;
   }
   .caracteristicas__textverde {
     position: absolute;
@@ -456,7 +494,18 @@ body {
     text-align: left;
     margin-top: 7rem;
     margin-left: 1rem;
-    border-bottom: 3px solid #55DFB4;
+  }
+  .caracteristicas__titlegreencard {
+    width: 300px;
+  }
+  .caracteristicas__descriptiongreencard {
+    width: 430px;
+  }
+  .caracteristicas__lineaverde {
+    background-color: #55DFB4;
+    height: 0.27em;
+    width: 82%;
+    margin-left: 1.2rem;
   }
 }
 

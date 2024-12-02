@@ -51,6 +51,32 @@
         cursor: pointer;
     }
 
+    &__menu.active {
+        padding-top: 1rem;
+        display: block;
+
+        li {
+            display: block;
+            margin-bottom: 0.5rem;
+            margin-left: -1rem;
+            
+            a {
+                text-decoration: none;
+                color: #A5A5A5;
+                font-family: Open Sans;
+                font-weight: 500;
+                font-size: 0.8rem;
+                letter-spacing: 0.25em;
+
+                &:hover {
+                    color: #000000;
+                    font-weight: bold;
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+
     @media only screen and (min-width: 1000px) {
         display: flex;
         justify-content: space-between;

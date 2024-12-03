@@ -9,11 +9,13 @@ body {
 }
 
 .header {
-  position: relative;
+  position: fixed;
   padding: 1.1rem;
   border-bottom: 1px solid #FFFFFF;
+  background-color: #FFFFFF;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2901960784);
   width: 100%;
+  z-index: 999;
 }
 .header__logo {
   color: #08A6E4;
@@ -984,4 +986,18 @@ body {
 .footer__icon {
   display: inline-block;
   margin-left: 1rem;
+}
+
+.scrollbar {
+  position: fixed;
+  width: 0%;
+  top: 4.55em;
+  height: 0.2em;
+  background-color: #08A6E4;
+  z-index: 1000;
+}
+@media only screen and (min-width: 1000px) {
+  .scrollbar {
+    height: 0.5em;
+  }
 }/*# sourceMappingURL=styles.css.map */

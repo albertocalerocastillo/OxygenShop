@@ -1,9 +1,11 @@
 .header {
-    position: relative;
+    position: fixed;
     padding: 1.1rem;
     border-bottom: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
     box-shadow: 0 2px 6px #0000004A;
     width: 100%;
+    z-index: 999;
 
     &__logo {
         color: #08A6E4;

@@ -1,0 +1,12 @@
+.scrollbar{
+    position: fixed;
+    width: 0%;
+    top: 4.55em;
+    height: 0.2em;
+    background-color: #08A6E4;
+    z-index: 1000;
+
+    @media only screen and (min-width: 1000px) {
+        height: 0.5em;
+    }
+}

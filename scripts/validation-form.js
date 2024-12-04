@@ -32,6 +32,26 @@ formulario.addEventListener('click', () => {
     }
 
     if (valido) {
-        alert('Se ha enviado correctamente.');
+        const datos = {
+            name: nameValue,
+            email: emailValue,
+    };
+
+    fetch('https://reqres.in/api/users', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(datos),
+    })
+        .then((response) => response.json())
+        .then((data) => {
+            console.log('Datos enviados:', data);
+            alert('Formulario enviado a la API.');
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+            alert('Ocurrió un error.');
+        });
     }
 });

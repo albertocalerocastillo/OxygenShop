@@ -121,6 +121,12 @@
         
         <section class="precios">
             <h2 class="precios__title">Pricing</h2>
+            <label for="currency-selector" class="precios__currency-label">Select Currency:</label>
+            <select id="currency-selector" class="precios__currency-selector">
+                <option value="eur">EUR</option>
+                <option value="usd" selected>USD</option>
+                <option value="gbp">GBP</option>
+            </select>
             <div class="precio-cards">
                 <div class="precio-card basic">
                     <div class="precio-card__paquete">
@@ -136,34 +142,36 @@
                     </ul>
                  <button class="precio-card__button">Begin</button>
                  </div>
-                <div class="precio-card professional">
+                 <div class="precio-card professional">
                     <div class="precio-card__paquete">
                         <p class="precio-card__planProfessional">Professional</p>
-                        <p class="precio-card__price">$25 <span> Limited offer</span></p>
+                        <p class="precio-card__price">$25</p><span>Limited offer</span>
                     </div>
-                        <ul class="precio-card__features">
-                            <li><span>☑</span> 500 MB HDD</li>
-                            <li><span>☑</span> 2 Subdomains</li>
-                            <li><span>☑</span> 5 E-mails</li>
-                            <li><span>☑</span> One year license</li>
-                            <li class="unavailable"><span>☒</span> Full support</li>
-                        </ul>
+                    <ul class="precio-card__features">
+                        <li><span>☑</span> 500 MB HDD</li>
+                        <li><span>☑</span> 2 Subdomains</li>
+                        <li><span>☑</span> 5 E-mails</li>
+                        <li><span>☑</span> One year license</li>
+                        <li class="unavailable"><span>☒</span> Full support</li>
+                    </ul>
                     <button class="precio-card__button">Begin</button>
                 </div>
+                
                 <div class="precio-card premium">
                     <div class="precio-card__paquete">
                         <p class="precio-card__planPremium">Premium</p>
-                        <p class="precio-card__price">$60 <span>Limited offer</span></p>
+                        <p class="precio-card__price">$60</p><span>Limited offer</span>
                     </div>
-                        <ul class="precio-card__features">
-                            <li><span>☑</span> 2 GB HDD</li>
-                            <li><span>☑</span> 5 Subdomains</li>
-                            <li><span>☑</span> 20 E-mails</li>
-                            <li><span>☑</span> Two years license</li>
-                            <li><span>☑</span> Full support</li>
-                        </ul>
+                    <ul class="precio-card__features">
+                        <li><span>☑</span> 2 GB HDD</li>
+                        <li><span>☑</span> 5 Subdomains</li>
+                        <li><span>☑</span> 20 E-mails</li>
+                        <li><span>☑</span> Two years license</li>
+                        <li><span>☑</span> Full support</li>
+                    </ul>
                     <button class="precio-card__button">Begin</button>
                 </div>
+                
             </div>
         </section>        
 
@@ -227,6 +235,7 @@
     <script src="./scripts/percentage-scroller.js"></script>
     <script src="./scripts/return-top.js"></script>
     <script src="./scripts/validation-form.js"></script>
+    <script src="./scripts/currency-selector.js"></script>
 
 </body>
 </html>

@@ -21,7 +21,7 @@
             <img src="./images/Menu.png" alt="Menu principal">
         </button>
     </nav>
-    
+
     <div class="scrollbar" id="percentage-scroller"></div>
 
     <main class="main-content">
@@ -229,6 +229,19 @@
             </div>
         </footer>
         
+        <dialog id="newsletter-popup" class="newsletter-modal">
+            <button id="close-popup" class="close-button">X</button>
+            <div class="newsletter-content">
+                <h2>Subscribe to our newsletter</h2>
+                <form id="newsletter-form">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required />
+                    <button type="submit">Send</button>
+                </form>
+                <p id="thanks" style="display: none;">Thanks for subscribing!</p>
+            </div>
+        </dialog>
+
     </main>
 
     <script src="./scripts/nav.js"></script>
@@ -236,6 +249,7 @@
     <script src="./scripts/return-top.js"></script>
     <script src="./scripts/validation-form.js"></script>
     <script src="./scripts/currency-selector.js"></script>
+    <script src="./scripts/popup.js"></script>
 
 </body>
 </html>

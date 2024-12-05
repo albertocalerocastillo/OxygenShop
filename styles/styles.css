@@ -546,6 +546,24 @@ body {
   margin-bottom: 0.8rem;
 }
 
+.precios__currency-label {
+  font-family: Raleway;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+
+.precios__currency-selector {
+  font-family: Raleway;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 2px solid;
+  -o-border-image: linear-gradient(90deg, #FB3B64, rgba(7, 172, 230, 0.2901960784), #55DFB4) 1;
+     border-image: linear-gradient(90deg, #FB3B64, rgba(7, 172, 230, 0.2901960784), #55DFB4) 1;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
 .precio-cards {
   width: 90%;
   max-width: 1000px;
@@ -726,6 +744,22 @@ body {
 }
 
 @media only screen and (min-width: 1000px) {
+  .precios__currency-label {
+    font-family: Raleway;
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+  }
+  .precios__currency-selector {
+    font-family: Raleway;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 2px solid;
+    -o-border-image: linear-gradient(90deg, #FB3B64, rgba(7, 172, 230, 0.2901960784), #55DFB4) 1;
+       border-image: linear-gradient(90deg, #FB3B64, rgba(7, 172, 230, 0.2901960784), #55DFB4) 1;
+    margin-bottom: 2rem;
+    cursor: pointer;
+  }
   .precio-cards {
     display: flex;
     margin-top: 3rem;
@@ -763,7 +797,7 @@ body {
   }
   .precios__title {
     margin-top: 6rem;
-    margin-bottom: 2.8rem;
+    margin-bottom: 1.5rem;
   }
   .precio-card__planProfessional {
     margin-left: 0px;

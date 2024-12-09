@@ -1129,4 +1129,87 @@ button[type=submit]:hover {
   margin-top: 1rem;
   color: green;
   font-weight: bold;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+.slider-contenedor {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+.slider img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 2;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider-button.prev {
+  left: 10px;
+}
+.slider-button.next {
+  right: 10px;
+}
+.slider-puntos {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  z-index: 3;
+}
+.slider-puntos button {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: black;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.slider-puntos button.active {
+  background-color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .slider {
+    height: 200px;
+  }
+  .slider-contenedor {
+    width: 100%;
+  }
+  .slider-button {
+    width: 25px;
+    height: 25px;
+  }
+  .slider-puntos button {
+    width: 8px;
+    height: 8px;
+  }
 }/*# sourceMappingURL=styles.css.map */

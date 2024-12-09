@@ -71,13 +71,13 @@
 .precio-card__paquete {
     position: absolute;
     top: 6rem;
-    left: 2.8rem;
-    text-align: left;
+    left: 1rem;
+    text-align: center;
 }
 
 .precio-card__planBasic {
     font-family: Raleway;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     text-align: center;
     color: #13253B;
     font-weight: bold;
@@ -86,18 +86,18 @@
 
 .precio-card__planProfessional {
     font-family: Raleway;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     text-align: center;
     color: #13253B;
     font-weight: bold;
     margin-top: -30px;
-    margin-left: -30px;
+    margin-left: 0px;
 }
 
 
 .precio-card__planPremium {
     font-family: Raleway;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     text-align: center;
     color: #13253B;
     font-weight: bold;
@@ -108,7 +108,7 @@
 
 .precio-card__price {
     font-family: Open Sans;
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: 100;
     display: block;
 }

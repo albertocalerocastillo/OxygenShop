@@ -36,7 +36,7 @@
             <img src="./images/Inicio.png" alt="Foto Portatil" class="image-section__image">
         </section>
 
-        <section class="estadisticas">
+        <section id= "why-us" class="estadisticas">
             <h2 class="estadisticas__title">The most popular sales platform in country</h2>
             <div class="estadisticas__container">
                 <article class="estadisticas__item">
@@ -71,7 +71,7 @@
         </section>
         
 
-        <section class="caracteristicas">
+        <section id= "benefits" class="caracteristicas">
             <article class="caracteristicas__card">
                 <div class="caracteristicas__contenidorojo">
                     <div class="caracteristicas__iconos">
@@ -119,7 +119,7 @@
             </article>
         </section>
         
-        <section class="precios">
+        <section id="prices" class="precios">
             <h2 class="precios__title">Pricing</h2>
             <label for="currency-selector" class="precios__currency-label">Select Currency:</label>
             <select id="currency-selector" class="precios__currency-selector">
@@ -192,7 +192,7 @@
             </div>
         </div>        
 
-        <section class="contacto-form">
+        <section id="contact" class="contacto-form">
             <div class="contacto-form__contenedorprincipal">
                 <div class="contacto-form__info">
                     <h2 class="contacto-form__title">Any questions?</h2>
@@ -241,13 +241,19 @@
                 © 2022 OXYGEN, All Rights Reserved
             </p>
             <div class="footer__social">
-                <img src="./images/Twitter.png" alt="Twitter" class="footer__icon" />
-                <img src="./images/Facebook.png" alt="Facebook" class="footer__icon" />
+                <a href="https://www.linkedin.com/in/alberto-calero-castillo-405373257/" target="_blank">
+                    <img src="./images/linkedin.png" alt="LinkedIn" class="footer__icon" />
+                </a>
+                <a href="https://github.com/albertocalerocastillo" target="_blank">
+                    <img src="./images/github.png" alt="GitHub" class="footer__icon" />
+                </a>
             </div>
         </footer>
         
         <dialog id="newsletter-popup" class="newsletter-modal">
-            <button id="close-popup" class="close-button">X</button>
+            <button id="close-popup" class="close-button">
+                <img src="./images/cross.png" alt="Cerrar" />
+            </button>            
             <div class="newsletter-content">
                 <h2>Subscribe to our newsletter</h2>
                 <form id="newsletter-form">

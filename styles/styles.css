@@ -43,7 +43,6 @@ body {
 }
 .header__menu li a:hover {
   color: #000000;
-  font-weight: bold;
   padding-bottom: 27px;
   border-bottom: 3px solid #08A6E4;
 }
@@ -72,11 +71,6 @@ body {
   font-weight: 500;
   font-size: 0.8rem;
   letter-spacing: 0.25em;
-}
-.header__menu.active li a:hover {
-  color: #000000;
-  font-weight: bold;
-  border-bottom: none;
 }
 @media only screen and (min-width: 1000px) {
   .header {
@@ -607,13 +601,13 @@ body {
 .precio-card__paquete {
   position: absolute;
   top: 6rem;
-  left: 2.8rem;
-  text-align: left;
+  left: 1rem;
+  text-align: center;
 }
 
 .precio-card__planBasic {
   font-family: Raleway;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   text-align: center;
   color: #13253B;
   font-weight: bold;
@@ -622,17 +616,17 @@ body {
 
 .precio-card__planProfessional {
   font-family: Raleway;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   text-align: center;
   color: #13253B;
   font-weight: bold;
   margin-top: -30px;
-  margin-left: -30px;
+  margin-left: 0px;
 }
 
 .precio-card__planPremium {
   font-family: Raleway;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   text-align: center;
   color: #13253B;
   font-weight: bold;
@@ -642,7 +636,7 @@ body {
 
 .precio-card__price {
   font-family: Open Sans;
-  font-size: 3rem;
+  font-size: 2.8rem;
   font-weight: 100;
   display: block;
 }
@@ -1060,24 +1054,35 @@ body {
     width: 3.5rem;
   }
 }
+.newsletter-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: none;
+}
+
 .newsletter-modal {
   width: 60%;
   max-width: 400px;
   border: none;
   border-radius: 10px;
   padding: 3rem;
-  box-shadow: 2px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #08A6E4;
+  background: #e0dfdf;
   z-index: 1000;
 }
 
 h2 {
-  font-size: "Raleway";
+  font-family: "Raleway", sans-serif;
   padding-bottom: 1.5rem;
 }
 
@@ -1092,14 +1097,21 @@ h2 {
   background: none;
   font-size: 1.2rem;
   cursor: pointer;
+  border: none;
+}
+
+.close-button img {
+  width: 30px;
+  height: 30px;
 }
 
 label {
-  font-size: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 1.2rem;
 }
 
 input {
+  font-family: "Raleway", sans-serif;
   padding: 0.5rem;
   margin: 0.5rem 0;
   margin-bottom: 1rem;
@@ -1111,7 +1123,8 @@ input {
 }
 
 button[type=submit] {
-  background-color: #55DFB4;
+  font-family: "Raleway", sans-serif;
+  background-color: #08A6E4;
   font-size: 1rem;
   font-weight: bold;
   padding: 0.8rem 2rem;
@@ -1122,7 +1135,7 @@ button[type=submit] {
 }
 
 button[type=submit]:hover {
-  background-color: #16b381;
+  background-color: #0683b4;
 }
 
 #thank-you-message {

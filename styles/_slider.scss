@@ -1,0 +1,94 @@
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    
+    &-contenedor {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        z-index: 2;
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &.prev {
+            left: 10px;
+        }
+
+        &.next {
+            right: 10px;
+        }
+    }
+
+    &-puntos {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        z-index: 3;
+
+        button {
+            width: 10px;
+            height: 10px;
+            margin: 0 5px;
+            background-color: black;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            &.active {
+                background-color: white;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .slider {
+        height: 200px;
+    }
+
+    .slider-contenedor {
+        width: 100%;
+    }
+
+    .slider-button {
+        width: 25px;
+        height: 25px;
+    }
+
+    .slider-puntos {
+        button {
+            width: 8px;
+            height: 8px;
+        }
+    }
+}

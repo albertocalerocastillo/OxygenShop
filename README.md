@@ -4,7 +4,7 @@
 
 **Landing page de una plataforma de tiendas online, maquetada en HTML y SCSS y con interacción en JavaScript vanilla.**
 
-Proyecto del bootcamp Full Stack de OXYGEN Academy · Módulos 1 y 2
+Proyecto del Training React Full Stack de OXYGEN · Módulos 1 y 2
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![Sass](https://img.shields.io/badge/Sass-CC6699?style=flat-square&logo=sass&logoColor=white)
